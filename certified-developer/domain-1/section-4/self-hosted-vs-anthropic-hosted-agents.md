@@ -21,3 +21,9 @@ Los hooks son bloques de codigo determinastas que se ejecutan en nuestro propio 
 - Deny: Rechazar la call y frenar su ejecucion.
 - Ask: pausa y preguntar al usuario si lo aprueba o rechaza.
 - Defer: se termina la query para luego retomarla.
+
+Hooks precedence:
+- Deny
+- Defer
+- Ask
+- Allow
