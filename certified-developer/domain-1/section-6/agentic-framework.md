@@ -14,3 +14,9 @@ PydanticAI es un framework que nos trae a la mesa la idea de tener un flujo mode
 Los "strands" son un framework model-driven de AWS, con un estilo ReAct loops creados con la finalidad de la simpleza en el flujo
 
 >[!info] Un ReAct loop es un patron de diseño que consta de que el agente alterne entre razonar (reasoning) y actuar (acting) hasta llegar a un resultado final, en lugar de dar la respuesta de una sola vez.
+
+## When each one?
+La pregunta del millon... hablamos de 3 frameworks diferentes pero cuando debo usar cada uno?
+- Langraph: Cuando necesitamos tener una maquina de estados con transiciones en los mismos visibles, con un control human in the loop o time travel definido en el codigo, con ciclos, retries, branching en el codigo, no solo prompts, pausas desde las cuales el agente pueda retomar cuando corresponda, ahi langraph es poderoso.
+- Pydantic: Cuando la forma del output debe ser estrictamente como la definimos pydantic gana con su type structured safety.
+- Strands: cuando no necesitamos ninguno de los dos previos sino velocidad, simpleza y a demas usamos el entorno de AWS, strands gana.
