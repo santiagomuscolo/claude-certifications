@@ -1,4 +1,3 @@
-
 Esta seccion es bastante sencilla si ya conocemos topicos de arquitectura basicos (failover, retries, degradation, availability, etc...), se trata un poco 3 pilares claves:
 1. Availability: La aplicacion debe estar disponible asi sea que nuestra instancia primaria se caiga.
 2. Failover: Un punto de backup para cuando nuestro recurso primario se cae.
