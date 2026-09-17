@@ -17,6 +17,6 @@ Y creo que nos quedo algo solido de todo esto y es que si se presentan algunas d
 
 > [!info] Batch jobs requests si soporta cache pero se deben tener en cuenta topicos como la concurrencia y el tiempo de cache.
 
-## AWS Bedrock
-Hay un servicio dando vueltas por los topicos de anthropic y es AWS bedrock, este servicio nos consumir modelos de distintos proveedores sin la necesidad de alojarlo uno mismo en su propia infraestructura y abstrayendo parte de las capacidades que se tendrian que gestionar de forma manual al integrarse directamente con cada proveedor, esto tiene pros como el caching, thinking (deep), tool use y pricing predecible pero tradeoffs como por ejemplo el no funcionamiento de la Files API, server tools y batches.
+## AWS Bedrock & Vertex AI
+Hay unos servicios dando vueltas por los topicos de anthropic y son AWS bedrock & Vertex AI, este servicio nos permite consumir modelos de distintos proveedores sin la necesidad de alojarlo uno mismo en su propia infraestructura y abstrayendo parte de las capacidades que se tendrian que gestionar de forma manual al integrarse directamente con cada proveedor, esto tiene pros como el caching, thinking (deep), tool use y pricing predecible pero tradeoffs como por ejemplo el no funcionamiento de la Files API, server tools y batches. Aunque radica una leve diferencia entre ambos y es que vertex permite web search basicas.
 
