@@ -1,0 +1,4 @@
+Bueno dentro de la integracion de claude en el codigo hay que tener en cuenta una serie de puntos:
+- Manejo de errores: Los errores deben fallar consistentemente de forma controlada y en voz alta, no manejados por detras sin ser expresados en el sistema, independientemente de esto no todos los "errores" se manejan igual, usualmente detras de los errores existe un retry with backoff que se aprecia en erorres 5xx, rate limiting, timouts y otros que no ameritan retry en loop como errores 4xx, schemas invalidos, etc...
+- Validacion de las respuestas: Chequear las respuestas del modelo contra los schemas y re-formular el prompt frente a la falla en los mismos especificando el error en el mismo para que este pueda fixearse.
+- Parsing defensivo: Parsear esperando valores nulos o incompletos, no se debe esperar que el modelo responda 100% bien siempre.
